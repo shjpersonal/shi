@@ -1,0 +1,3 @@
+.gradient-waves-container{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;background:#030507;pointer-events:auto}
+.gradient-waves-container canvas{width:100%;height:100%;display:block}
+@media(prefers-reduced-motion:reduce){.gradient-waves-container{pointer-events:none}}
