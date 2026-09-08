@@ -43,6 +43,10 @@ jobs:
           VITE_BASE_PATH: /shi/
         run: pnpm build
 
+      - name: Exclude original source images from deployment
+        shell: bash
+        run: find dist/assets -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \) -delete
+
       - name: Preserve direct links to project pages
         shell: bash
         run: |

@@ -12,12 +12,12 @@ const routeFromLocation = () => {
 }
 
 const projects = [
-  { slug: 'got-some-coffee', id: '01', title: '整点咖啡 / GOT SOME COFFEE', type: '品牌视觉设计 · VI 系统', image: '/assets/coffee/cup.png', year: '2026' },
-  { slug: 'baize', id: '02', title: '白泽 / BAIZE', type: '祥瑞神兽 · IP 形象设计', image: '/assets/baize/cover-complete.png', year: '2026' },
-  { slug: 'shadow-puppet', id: '03', title: '光影千年 / SHADOW PUPPET', type: '非遗文化 · 皮影 IP 形象设计', image: '/assets/shadow/cover.png', year: '2026' },
-  { slug: 'beihai-animation', id: '04', title: '潮起疍风华 / A DAN', type: '科普动画 · 疍家文化 IP', image: '/assets/beihai/cover-clear.png', year: '2026' },
-  { slug: 'tea-life', id: '05', title: '一片茶，见一生 / A LEAF OF TEA', type: 'AIGC 动画 · 瑶族油茶非遗', image: '/assets/chajian/cover-wide.jpg', year: '2026' },
-  { slug: 'small-ranch', id: '06', title: '小小牧场 / SMALL RANCH', type: 'Unity 2D · 像素经营游戏', image: '/assets/farm/cover.png', year: '2026' },
+  { slug: 'got-some-coffee', id: '01', title: '整点咖啡 / GOT SOME COFFEE', type: '品牌视觉设计 · VI 系统', image: '/assets/coffee/cup.webp', year: '2026' },
+  { slug: 'baize', id: '02', title: '白泽 / BAIZE', type: '祥瑞神兽 · IP 形象设计', image: '/assets/baize/cover-complete.webp', year: '2026' },
+  { slug: 'shadow-puppet', id: '03', title: '光影千年 / SHADOW PUPPET', type: '非遗文化 · 皮影 IP 形象设计', image: '/assets/shadow/cover.webp', year: '2026' },
+  { slug: 'beihai-animation', id: '04', title: '潮起疍风华 / A DAN', type: '科普动画 · 疍家文化 IP', image: '/assets/beihai/cover-clear.webp', year: '2026' },
+  { slug: 'tea-life', id: '05', title: '一片茶，见一生 / A LEAF OF TEA', type: 'AIGC 动画 · 瑶族油茶非遗', image: '/assets/chajian/cover-wide.webp', year: '2026' },
+  { slug: 'small-ranch', id: '06', title: '小小牧场 / SMALL RANCH', type: 'Unity 2D · 像素经营游戏', image: '/assets/farm/cover.webp', year: '2026' },
 ]
 
 const capabilities = ['视觉系统', '3D 与动态', 'AI 协同创作', '视觉研究与叙事']
@@ -139,7 +139,7 @@ function HomePage({ navigate }) {
         <h2>视觉设计是一种建立理解、传达情绪，并让想法被看见的方式。</h2>
       </div>
       <div className="profile-card-grid">
-        <BorderGlow className="profile-about-card"><figure className="portrait-frame"><img src="/assets/profile-portrait.png" alt="施汉杰个人照片" loading="lazy" decoding="async" /><figcaption><span>SHI HANJIE</span><span>PORTRAIT / 个人照片</span></figcaption></figure><div className="profile-card-content"><span className="profile-card-number">01 / ABOUT</span><h3>个人介绍</h3><p>我是一名视觉传达与数字媒体设计方向的硕士研究生，具备动画创作与视觉设计的系统学习背景，并持续关注新技术与设计表达方式的融合。目前主要专注于平面设计与 IP 设计方向，注重视觉语言、创意概念与品牌形象之间的协调表达，同时积极探索 AI 在创意构思与设计实践中的更多可能。希望通过不断学习与实践，创造兼具审美价值与传播力的视觉作品。期待与您的合作。</p></div></BorderGlow>
+        <BorderGlow className="profile-about-card"><figure className="portrait-frame"><img src="/assets/profile-portrait.webp" alt="施汉杰个人照片" loading="lazy" decoding="async" /><figcaption><span>SHI HANJIE</span><span>PORTRAIT / 个人照片</span></figcaption></figure><div className="profile-card-content"><span className="profile-card-number">01 / ABOUT</span><h3>个人介绍</h3><p>我是一名视觉传达与数字媒体设计方向的硕士研究生，具备动画创作与视觉设计的系统学习背景，并持续关注新技术与设计表达方式的融合。目前主要专注于平面设计与 IP 设计方向，注重视觉语言、创意概念与品牌形象之间的协调表达，同时积极探索 AI 在创意构思与设计实践中的更多可能。希望通过不断学习与实践，创造兼具审美价值与传播力的视觉作品。期待与您的合作。</p></div></BorderGlow>
         <BorderGlow className="profile-info-card"><span className="profile-card-number">02 / EDUCATION</span><h3>教育经历</h3><div className="profile-card-list"><div><span>院校</span><strong>广西师范大学</strong></div><div><span>阶段</span><strong>设计学硕士在读</strong></div><div><span>方向</span><strong>视觉传达 / 数字媒体 / 动画</strong></div></div></BorderGlow>
         <BorderGlow className="profile-info-card"><span className="profile-card-number">03 / SKILLS</span><h3>专业技能</h3><p className="profile-skill-copy">以视觉系统、动态叙事和 AI 协同创作为核心，兼顾概念研究与最终呈现。</p><div className="capability-tags">{capabilities.map((item, i) => <span key={item}>{String(i + 1).padStart(2, '0')} · {item}</span>)}</div><p className="profile-tools">Blender / Photoshop / 剪映 / 即梦 / ChatGPT / Codex</p></BorderGlow>
         <BorderGlow className="profile-awards-card"><span className="profile-card-number">04 / RECOGNITION</span><h3>曾获奖项</h3><div className="award-list">{awards.map(([year, name]) => <div key={name}><span>{year}</span><p>{name}</p></div>)}</div></BorderGlow>
@@ -186,7 +186,7 @@ function CoffeeProject({ project, navigate }) {
     <Navigation detail navigate={navigate} scrolled />
 
     <section className="coffee-page coffee-cover">
-      <img src="/assets/coffee/cup.png" alt="整点咖啡品牌咖啡杯实物展示" />
+      <img src="/assets/coffee/cup.webp" alt="整点咖啡品牌咖啡杯实物展示" />
       <div className="coffee-cover-shade" />
       <div className="coffee-page-count">01 / 08</div>
       <div className="shell coffee-cover-copy">
@@ -205,23 +205,23 @@ function CoffeeProject({ project, navigate }) {
           <p>“整点咖啡”把下午两三点的片刻休息转化为品牌主张，以轻松、温暖、满足为核心感受，用直率的语言、明亮色彩与拟人角色，邀请人们暂时放下工作，与自己和解。</p>
           <div className="coffee-values"><span>轻松 / RELAX</span><span>温暖 / WARM</span><span>满足 / SATISFY</span></div>
         </div>
-      <img src="/assets/coffee/story.png" alt="整点咖啡品牌故事与核心关键词" loading="lazy" decoding="async" />
+      <img src="/assets/coffee/story.webp" alt="整点咖啡品牌故事与核心关键词" loading="lazy" decoding="async" />
       </div>
     </section>
 
     <section className="coffee-page coffee-poster-page">
       <div className="coffee-page-count">03 / 08</div>
       <div className="shell coffee-section-head"><p>POSTER SYSTEM / 核心海报</p><h2>准点开业，<br />欢迎你来。</h2></div>
-      <img className="coffee-poster-set" src="/assets/coffee/poster-set.png" alt="整点咖啡蓝色、橙色与红色系列开业海报" loading="lazy" decoding="async" />
+      <img className="coffee-poster-set" src="/assets/coffee/poster-set.webp" alt="整点咖啡蓝色、橙色与红色系列开业海报" loading="lazy" decoding="async" />
     </section>
 
     <section className="coffee-page coffee-editorial-page">
       <div className="coffee-page-count dark">04 / 08</div>
       <div className="shell coffee-editorial">
         <div className="coffee-section-head dark"><p>POSTER IN CONTEXT / 海报场景</p><h2>同一视觉语言，<br />进入不同日常。</h2></div>
-        <img className="poster-wall" src="/assets/coffee/poster-wall.png" alt="街头墙面上的整点咖啡开业海报" loading="lazy" decoding="async" />
-        <img className="poster-shadow" src="/assets/coffee/poster-shadow.png" alt="光影墙面上的整点咖啡系列海报" loading="lazy" decoding="async" />
-        <img className="poster-frame" src="/assets/coffee/poster-frame.png" alt="室内空间中的整点咖啡可颂海报" loading="lazy" decoding="async" />
+        <img className="poster-wall" src="/assets/coffee/poster-wall.webp" alt="街头墙面上的整点咖啡开业海报" loading="lazy" decoding="async" />
+        <img className="poster-shadow" src="/assets/coffee/poster-shadow.webp" alt="光影墙面上的整点咖啡系列海报" loading="lazy" decoding="async" />
+        <img className="poster-frame" src="/assets/coffee/poster-frame.webp" alt="室内空间中的整点咖啡可颂海报" loading="lazy" decoding="async" />
       </div>
     </section>
 
@@ -229,26 +229,26 @@ function CoffeeProject({ project, navigate }) {
       <div className="coffee-page-count dark">05 / 08</div>
       <div className="shell coffee-system-grid">
         <div className="coffee-section-head dark"><p>DESIGN ELEMENTS / 设计元素</p><h2>一只落在杯沿上的鸟，<br />成为品牌记忆。</h2><span>角色图形以蓝色线条、暖黄色点缀与杯形结构组成；不同组合适配招牌、包装和传播物料。</span></div>
-        <div className="logo-board"><img src="/assets/coffee/logo-system.png" alt="整点咖啡角色标志标准制图与组合形式" loading="lazy" decoding="async" /></div>
+        <div className="logo-board"><img src="/assets/coffee/logo-system.webp" alt="整点咖啡角色标志标准制图与组合形式" loading="lazy" decoding="async" /></div>
       </div>
     </section>
 
     <section className="coffee-page coffee-products-page">
       <div className="coffee-page-count">06 / 08</div>
       <div className="shell coffee-section-head"><p>PACKAGING & PAPER / 包装与纸品</p><h2>从一口点心，<br />到一次递交。</h2></div>
-      <div className="shell product-duo"><figure><img src="/assets/coffee/pastry.png" alt="整点咖啡可颂食品包装" loading="lazy" decoding="async" /><figcaption>PASTRY PACKAGING / 食品包装</figcaption></figure><figure><img src="/assets/coffee/stationery.png" alt="整点咖啡信封与卡片设计" loading="lazy" decoding="async" /><figcaption>STATIONERY / 品牌纸品</figcaption></figure></div>
+      <div className="shell product-duo"><figure><img src="/assets/coffee/pastry.webp" alt="整点咖啡可颂食品包装" loading="lazy" decoding="async" /><figcaption>PASTRY PACKAGING / 食品包装</figcaption></figure><figure><img src="/assets/coffee/stationery.webp" alt="整点咖啡信封与卡片设计" loading="lazy" decoding="async" /><figcaption>STATIONERY / 品牌纸品</figcaption></figure></div>
     </section>
 
     <section className="coffee-page coffee-kit-page">
       <div className="coffee-page-count dark">07 / 08</div>
       <div className="shell coffee-section-head dark"><p>STAFF KIT / 员工物料</p><h2>让品牌被穿戴，<br />也被记住。</h2></div>
-      <div className="shell kit-grid"><figure className="kit-lanyard"><img src="/assets/coffee/lanyard.png" alt="整点咖啡员工工牌与挂绳" loading="lazy" decoding="async" /></figure><figure><img src="/assets/coffee/apron.png" alt="整点咖啡员工围裙" loading="lazy" decoding="async" /></figure><figure><img src="/assets/coffee/cards.png" alt="整点咖啡品牌名片" loading="lazy" decoding="async" /></figure></div>
+      <div className="shell kit-grid"><figure className="kit-lanyard"><img src="/assets/coffee/lanyard.webp" alt="整点咖啡员工工牌与挂绳" loading="lazy" decoding="async" /></figure><figure><img src="/assets/coffee/apron.webp" alt="整点咖啡员工围裙" loading="lazy" decoding="async" /></figure><figure><img src="/assets/coffee/cards.webp" alt="整点咖啡品牌名片" loading="lazy" decoding="async" /></figure></div>
     </section>
 
     <section className="coffee-page coffee-finale">
       <div className="coffee-page-count">08 / 08</div>
       <div className="shell coffee-section-head"><p>IN THE REAL WORLD / 实物与空间</p><h2>品牌最终落在<br />每一次相遇里。</h2></div>
-      <div className="shell finale-grid"><figure className="finale-chairs"><img src="/assets/coffee/chairs.png" alt="整点咖啡品牌户外座椅" loading="lazy" decoding="async" /><figcaption>OUTDOOR SEATING / 户外座椅</figcaption></figure><figure className="finale-cup"><img src="/assets/coffee/cup.png" alt="整点咖啡品牌咖啡杯" loading="lazy" decoding="async" /><figcaption>COFFEE CUP / 咖啡杯</figcaption></figure><figure className="finale-sign"><img src="/assets/coffee/sign.png" alt="整点咖啡门店灯箱招牌" loading="lazy" decoding="async" /><figcaption>STORE SIGN / 门店灯箱</figcaption></figure></div>
+      <div className="shell finale-grid"><figure className="finale-chairs"><img src="/assets/coffee/chairs.webp" alt="整点咖啡品牌户外座椅" loading="lazy" decoding="async" /><figcaption>OUTDOOR SEATING / 户外座椅</figcaption></figure><figure className="finale-cup"><img src="/assets/coffee/cup.webp" alt="整点咖啡品牌咖啡杯" loading="lazy" decoding="async" /><figcaption>COFFEE CUP / 咖啡杯</figcaption></figure><figure className="finale-sign"><img src="/assets/coffee/sign.webp" alt="整点咖啡门店灯箱招牌" loading="lazy" decoding="async" /><figcaption>STORE SIGN / 门店灯箱</figcaption></figure></div>
     </section>
     <ProjectFooter current={project} navigate={navigate} />
   </main>
@@ -263,7 +263,7 @@ function BaizeProject({ project, navigate }) {
     <Navigation detail navigate={navigate} scrolled />
 
     <section className="baize-page baize-cover">
-      <img className="baize-cover-art" src="/assets/baize/cover-complete.png" alt="白泽祥瑞神兽IP形象设计封面" />
+      <img className="baize-cover-art" src="/assets/baize/cover-complete.webp" alt="白泽祥瑞神兽IP形象设计封面" />
       <div className="baize-cover-mask" />
       <div className="baize-page-count">01 / 09</div>
       <div className="shell baize-cover-copy"><p>MYTHICAL CREATURE · IP IMAGE DESIGN</p><h1>白泽<br /><span>BAIZE</span></h1><div><strong>将通晓万物的祥瑞神兽，转译为活泼、亲和且富有传播力的当代 IP 形象。</strong><span>SCROLL TO EXPLORE ↓</span></div></div>
@@ -282,45 +282,45 @@ function BaizeProject({ project, navigate }) {
       <div className="baize-page-count">03 / 09</div>
       <div className="shell baize-section-head"><p>IDENTITY & COLOR / 身份与色彩</p><h2>神兽身份，<br />四种鲜明性格。</h2></div>
       <div className="shell baize-identity-grid">
-        <BaizeArtwork src="/assets/baize/identity-card.png" alt="白泽神兽身份设定：籍贯、身份、性格与爱好" />
-        <BaizeArtwork src="/assets/baize/design-concept.png" alt="白泽IP设计理念与色彩搭配" />
+        <BaizeArtwork src="/assets/baize/identity-card.webp" alt="白泽神兽身份设定：籍贯、身份、性格与爱好" />
+        <BaizeArtwork src="/assets/baize/design-concept.webp" alt="白泽IP设计理念与色彩搭配" />
       </div>
     </section>
 
     <section className="baize-page baize-views-page">
       <div className="baize-page-count dark">04 / 09</div>
       <div className="shell baize-section-head dark"><p>CHARACTER TURNAROUND / 神兽三视图</p><h2>正面、侧面、背面，<br />建立统一角色结构。</h2></div>
-      <BaizeArtwork src="/assets/baize/turnaround.png" className="shell baize-wide-art" alt="白泽IP形象正面、侧面和背面三视图" />
+      <BaizeArtwork src="/assets/baize/turnaround.webp" className="shell baize-wide-art" alt="白泽IP形象正面、侧面和背面三视图" />
     </section>
 
     <section className="baize-page baize-expression-page">
       <div className="baize-page-count">05 / 09</div>
       <div className="shell baize-section-head"><p>EXPRESSION SYSTEM / 表情系统</p><h2>让每一种情绪，<br />都成为沟通语言。</h2></div>
-      <BaizeArtwork src="/assets/baize/expressions.png" className="shell baize-wide-art" alt="白泽开心、惊喜、期待、错愕和委屈等八种完整表情" />
+      <BaizeArtwork src="/assets/baize/expressions.webp" className="shell baize-wide-art" alt="白泽开心、惊喜、期待、错愕和委屈等八种完整表情" />
     </section>
 
     <section className="baize-page baize-costume-page">
       <div className="baize-page-count dark">06 / 09</div>
       <div className="shell baize-section-head dark"><p>COSTUME & MOTION / 服装与动作延展</p><h2>从神话身份，<br />走入多元角色。</h2></div>
-      <BaizeArtwork src="/assets/baize/costumes-actions.png" className="shell baize-portrait-art" alt="白泽财神、武将、书生服装及动作延展" />
+      <BaizeArtwork src="/assets/baize/costumes-actions.webp" className="shell baize-portrait-art" alt="白泽财神、武将、书生服装及动作延展" />
     </section>
 
     <section className="baize-page baize-merch-page">
       <div className="baize-page-count">07 / 09</div>
       <div className="shell baize-section-head"><p>CULTURAL PRODUCTS / 文创周边</p><h2>表情与角色，<br />转化为随身陪伴。</h2></div>
-      <BaizeArtwork src="/assets/baize/merchandise.png" className="shell baize-wide-art" alt="白泽徽章、钥匙扣和磁贴文创周边" />
+      <BaizeArtwork src="/assets/baize/merchandise.webp" className="shell baize-wide-art" alt="白泽徽章、钥匙扣和磁贴文创周边" />
     </section>
 
     <section className="baize-page baize-package-page">
       <div className="baize-page-count dark">08 / 09</div>
       <div className="shell baize-section-head dark"><p>BLIND BOX / 系列盲盒</p><h2>把祈愿主题，<br />包装成收藏体验。</h2></div>
-      <BaizeArtwork src="/assets/baize/blindbox.png" className="shell baize-wide-art" alt="白泽财神、武将和书生系列盲盒包装设计" />
+      <BaizeArtwork src="/assets/baize/blindbox.webp" className="shell baize-wide-art" alt="白泽财神、武将和书生系列盲盒包装设计" />
     </section>
 
     <section className="baize-page baize-scene-page">
       <div className="baize-page-count">09 / 09</div>
       <div className="shell baize-section-head"><p>CAMPAIGN IN CONTEXT / 宣传场景</p><h2>进入城市空间，<br />让神话与人相遇。</h2></div>
-      <BaizeArtwork src="/assets/baize/campaign-scenes.png" className="shell baize-wide-art baize-scene-art" alt="白泽IP地铁与公共空间宣传海报应用" />
+      <BaizeArtwork src="/assets/baize/campaign-scenes.webp" className="shell baize-wide-art baize-scene-art" alt="白泽IP地铁与公共空间宣传海报应用" />
     </section>
     <ProjectFooter current={project} navigate={navigate} />
   </main>
@@ -331,7 +331,7 @@ function ShadowProject({ project, navigate }) {
     <Navigation detail navigate={navigate} scrolled />
 
     <section className="shadow-page shadow-cover">
-      <img className="shadow-cover-art" src="/assets/shadow/cover.png" alt="光影千年皮影戏IP形象设计封面" />
+      <img className="shadow-cover-art" src="/assets/shadow/cover.webp" alt="光影千年皮影戏IP形象设计封面" />
       <div className="shadow-cover-mask" />
       <div className="shadow-page-count">01 / 08</div>
       <div className="shell shadow-cover-copy"><p>SHADOW PUPPET · IP IMAGE DESIGN</p><h1>光影千年<br /><span>SHADOW PUPPET</span></h1><div><strong>以陕西皮影的色彩、纹样与戏剧角色为线索，塑造兼具传统韵味与亲和力的“影虎”IP。</strong><span>SCROLL TO EXPLORE ↓</span></div></div>
@@ -350,43 +350,43 @@ function ShadowProject({ project, navigate }) {
       <div className="shadow-page-count">03 / 08</div>
       <div className="shell shadow-section-head"><p>CHARACTER SYSTEM / 角色系统</p><h2>影虎，<br />刚柔并济。</h2></div>
       <div className="shell shadow-character-grid">
-        <BaizeArtwork src="/assets/shadow/character-card.png" alt="影虎角色介绍与完整正面形象" />
-        <BaizeArtwork src="/assets/shadow/turnaround.png" alt="影虎正面侧面背面三视图" />
+        <BaizeArtwork src="/assets/shadow/character-card.webp" alt="影虎角色介绍与完整正面形象" />
+        <BaizeArtwork src="/assets/shadow/turnaround.webp" alt="影虎正面侧面背面三视图" />
       </div>
     </section>
 
     <section className="shadow-page shadow-expression-page">
       <div className="shadow-page-count dark">04 / 08</div>
       <div className="shell shadow-section-head dark"><p>EXPRESSION SYSTEM / 表情延展</p><h2>十二种情绪，<br />建立鲜活性格。</h2></div>
-      <BaizeArtwork src="/assets/shadow/expressions.png" className="shell shadow-wide-art" alt="影虎十二种完整表情设计" />
+      <BaizeArtwork src="/assets/shadow/expressions.webp" className="shell shadow-wide-art" alt="影虎十二种完整表情设计" />
     </section>
 
     <section className="shadow-page shadow-costume-page">
       <div className="shadow-page-count">05 / 08</div>
       <div className="shell shadow-section-head"><p>ACTION & COSTUME / 动作与服装</p><h2>从戏台角色，<br />延展多重身份。</h2></div>
-      <BaizeArtwork src="/assets/shadow/costumes.png" className="shell shadow-wide-art" alt="影虎骑瑞兽、武将、靠旗和骑马造型" />
+      <BaizeArtwork src="/assets/shadow/costumes.webp" className="shell shadow-wide-art" alt="影虎骑瑞兽、武将、靠旗和骑马造型" />
     </section>
 
     <section className="shadow-page shadow-poster-page">
       <div className="shadow-page-count dark">06 / 08</div>
       <div className="shell shadow-section-head dark"><p>POSTER SERIES / 系列海报</p><h2>一组角色，<br />讲述千年光影。</h2></div>
       <div className="shell shadow-poster-grid">
-        <figure><img src="/assets/shadow/poster-rider.jpg" alt="光影千年骑马角色海报" loading="lazy" /><figcaption>骑马 / RIDER</figcaption></figure>
-        <figure><img src="/assets/shadow/poster-warrior.jpg" alt="光影千年武将角色海报" loading="lazy" /><figcaption>武将 / WARRIOR</figcaption></figure>
-        <figure><img src="/assets/shadow/poster-qilin.jpg" alt="光影千年麒麟角色海报" loading="lazy" /><figcaption>麒麟 / QILIN</figcaption></figure>
+        <figure><img src="/assets/shadow/poster-rider.webp" alt="光影千年骑马角色海报" loading="lazy" /><figcaption>骑马 / RIDER</figcaption></figure>
+        <figure><img src="/assets/shadow/poster-warrior.webp" alt="光影千年武将角色海报" loading="lazy" /><figcaption>武将 / WARRIOR</figcaption></figure>
+        <figure><img src="/assets/shadow/poster-qilin.webp" alt="光影千年麒麟角色海报" loading="lazy" /><figcaption>麒麟 / QILIN</figcaption></figure>
       </div>
     </section>
 
     <section className="shadow-page shadow-products-page">
       <div className="shadow-page-count">07 / 08</div>
       <div className="shell shadow-section-head"><p>CULTURAL PRODUCTS / 文创产品</p><h2>角色走下戏台，<br />成为随身文化。</h2></div>
-      <BaizeArtwork src="/assets/shadow/products.png" className="shell shadow-wide-art" alt="影虎钥匙扣、徽章和手机壳应用" />
+      <BaizeArtwork src="/assets/shadow/products.webp" className="shell shadow-wide-art" alt="影虎钥匙扣、徽章和手机壳应用" />
     </section>
 
     <section className="shadow-page shadow-lifestyle-page">
       <div className="shadow-page-count dark">08 / 08</div>
       <div className="shell shadow-section-head dark"><p>LIFESTYLE APPLICATION / 生活化应用</p><h2>从展览视觉，<br />延伸日常场景。</h2></div>
-      <BaizeArtwork src="/assets/shadow/lifestyle.png" className="shell shadow-wide-art" alt="光影千年服装、明信片、帆布袋、抱枕、墙面和折扇应用" />
+      <BaizeArtwork src="/assets/shadow/lifestyle.webp" className="shell shadow-wide-art" alt="光影千年服装、明信片、帆布袋、抱枕、墙面和折扇应用" />
     </section>
     <ProjectFooter current={project} navigate={navigate} />
   </main>
@@ -397,7 +397,7 @@ function BeihaiProject({ project, navigate }) {
     <Navigation detail navigate={navigate} scrolled />
 
     <section className="beihai-page beihai-cover">
-      <img className="beihai-cover-art" src="/assets/beihai/cover-clear.png" alt="潮起疍风华广西北海疍家科普动画IP封面" />
+      <img className="beihai-cover-art" src="/assets/beihai/cover-clear.webp" alt="潮起疍风华广西北海疍家科普动画IP封面" />
       <div className="beihai-cover-mask" />
       <div className="beihai-page-count">01 / 06</div>
       <div className="shell beihai-cover-copy"><p>ANIMATION · CULTURAL IP DESIGN</p><h1>潮起疍风华<br /><span>A DAN · BEIHAI</span></h1><div><strong>以疍家少女“阿疍”为叙事主角，用轻盈动画讲述北海海洋文化与传统生活。</strong><span>SCROLL TO EXPLORE ↓</span></div></div>
@@ -416,7 +416,7 @@ function BeihaiProject({ project, navigate }) {
       <div className="beihai-page-count">03 / 06</div>
       <div className="shell beihai-section-head"><p>ANIMATION FILM / 动画正片</p><h2>跟随阿疍，<br />驶向北海。</h2></div>
       <div className="shell beihai-player-frame">
-        <video controls playsInline preload="none" poster="/assets/beihai/cover-clear.png" aria-label="潮起疍风华动画正片">
+        <video controls playsInline preload="none" poster="/assets/beihai/cover-clear.webp" aria-label="潮起疍风华动画正片">
           <source src="/assets/beihai/beihai-animation.mp4" type="video/mp4" />
           当前浏览器不支持视频播放。
         </video>
@@ -427,19 +427,19 @@ function BeihaiProject({ project, navigate }) {
     <section className="beihai-page beihai-character-page">
       <div className="beihai-page-count dark">04 / 06</div>
       <div className="shell beihai-section-head dark"><p>CHARACTER PROFILE / 角色档案</p><h2>勇敢坚强的，<br />疍家少女阿疍。</h2></div>
-      <div className="shell beihai-character-modules"><BaizeArtwork src="/assets/beihai/identity-v2.png" className="beihai-module-art" alt="阿疍角色形象、文化记忆点与基础档案" /><BaizeArtwork src="/assets/beihai/views-v2.png" className="beihai-module-art" alt="阿疍完整正视、四分之三侧视和侧视图" /></div>
+      <div className="shell beihai-character-modules"><BaizeArtwork src="/assets/beihai/identity-v2.webp" className="beihai-module-art" alt="阿疍角色形象、文化记忆点与基础档案" /><BaizeArtwork src="/assets/beihai/views-v2.webp" className="beihai-module-art" alt="阿疍完整正视、四分之三侧视和侧视图" /></div>
     </section>
 
     <section className="beihai-page beihai-poster-page">
       <div className="beihai-page-count">05 / 06</div>
       <div className="shell beihai-section-head"><p>STORY POSTERS / 动画主题海报</p><h2>四个海洋章节，<br />串起一段文化旅程。</h2></div>
-      <BaizeArtwork src="/assets/beihai/posters-v2.png" className="shell beihai-module-art beihai-poster-art" alt="追风遇海、贝珠手作、海边温情、航行无际四张完整主题海报" />
+      <BaizeArtwork src="/assets/beihai/posters-v2.webp" className="shell beihai-module-art beihai-poster-art" alt="追风遇海、贝珠手作、海边温情、航行无际四张完整主题海报" />
     </section>
 
     <section className="beihai-page beihai-mockup-page">
       <div className="beihai-page-count dark">06 / 06</div>
       <div className="shell beihai-section-head dark"><p>PHYSICAL APPLICATION / 实物应用</p><h2>把北海故事，<br />带入真实生活。</h2></div>
-      <figure className="shell beihai-mockup"><img src="/assets/beihai/physical-mockup.png" alt="阿疍亚克力立牌、帆布袋、明信片和徽章实物应用效果" loading="lazy" /><figcaption><span>GENERATED APPLICATION VISUAL</span><span>亚克力立牌 · 帆布袋 · 明信片 · 徽章</span></figcaption></figure>
+      <figure className="shell beihai-mockup"><img src="/assets/beihai/physical-mockup.webp" alt="阿疍亚克力立牌、帆布袋、明信片和徽章实物应用效果" loading="lazy" /><figcaption><span>GENERATED APPLICATION VISUAL</span><span>亚克力立牌 · 帆布袋 · 明信片 · 徽章</span></figcaption></figure>
     </section>
     <ProjectFooter current={project} navigate={navigate} />
   </main>
@@ -459,7 +459,7 @@ function TeaLifeProject({ project, navigate }) {
     <Navigation detail navigate={navigate} scrolled />
 
     <section className="tea-page tea-cover">
-      <img className="tea-cover-art" src="/assets/chajian/cover-wide.jpg" alt="一片茶见一生瑶族油茶非遗动画封面" />
+      <img className="tea-cover-art" src="/assets/chajian/cover-wide.webp" alt="一片茶见一生瑶族油茶非遗动画封面" />
       <div className="tea-cover-mask" />
       <div className="tea-page-count">01 / 08</div>
       <div className="shell tea-cover-copy"><p>AIGC FELT ANIMATION · YAO OIL TEA</p><h1>一片茶，见一生<br /><span>A LEAF OF TEA</span></h1><div><strong>一片叶子，一碗油茶；以阿茶的一生，讲述瑶族记忆如何在日常中代代相传。</strong><span>SCROLL TO EXPLORE ↓</span></div></div>
@@ -473,7 +473,7 @@ function TeaLifeProject({ project, navigate }) {
     <section className="tea-page tea-film-page">
       <div className="tea-page-count">03 / 08</div>
       <div className="shell tea-section-head"><p>ANIMATION FILM / 动画正片</p><h2>一碗油茶，<br />看见一生。</h2></div>
-      <div className="shell tea-player"><video controls playsInline preload="none" poster="/assets/chajian/cover-source.png" aria-label="一片茶见一生动画正片"><source src="/assets/chajian/animation.mp4" type="video/mp4" />当前浏览器不支持视频播放。</video><div><span>FULL FILM</span><span>点击播放 · 支持全屏观看</span></div></div>
+      <div className="shell tea-player"><video controls playsInline preload="none" poster="/assets/chajian/cover-source.webp" aria-label="一片茶见一生动画正片"><source src="/assets/chajian/animation.mp4" type="video/mp4" />当前浏览器不支持视频播放。</video><div><span>FULL FILM</span><span>点击播放 · 支持全屏观看</span></div></div>
     </section>
 
     <section className="tea-page tea-synopsis-page">
@@ -491,23 +491,23 @@ function TeaLifeProject({ project, navigate }) {
     <section className="tea-page tea-character-page">
       <div className="tea-page-count dark">06 / 08</div>
       <div className="shell tea-section-head dark"><p>CHARACTER TURNAROUND / 人物三视图</p><h2>毛毡质感，<br />承载三代记忆。</h2></div>
-      <div className="shell tea-character-grid tea-character-grid--complete"><figure><img src="/assets/chajian/character-panel-grandmother.png" alt="外婆毛毡人物正面侧面背面完整三视图" loading="lazy" /><figcaption><span>01 · 外婆 / GRANDMOTHER</span><small>情感引路人 · 传统生活的守护者</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-child.png" alt="年少阿茶毛毡人物正面侧面背面完整三视图" loading="lazy" /><figcaption><span>02 · 年少阿茶 / YOUNG ACHA</span><small>故事起点 · 初识油茶与家族记忆</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-teen.png" alt="青年阿茶第一套民族服饰完整三视图" loading="lazy" /><figcaption><span>03 · 青年阿茶 / ACHA</span><small>成长阶段 · 瑶族盛装造型</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-adult.png" alt="成年阿茶民族服饰完整三视图" loading="lazy" /><figcaption><span>04 · 成年阿茶 / ADULT ACHA</span><small>理解传承 · 接过外婆的木槌</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-ahe.png" alt="阿禾毛毡人物正面侧面背面完整三视图" loading="lazy" /><figcaption><span>05 · 阿禾 / A HE</span><small>下一代 · 传承故事的新起点</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-festival.png" alt="瑶族毛毡风格盛装人物完整三视图" loading="lazy" /><figcaption><span>06 · 瑶族盛装 / FESTIVAL LOOK</span><small>服饰细节 · 银饰与织绣纹样</small></figcaption></figure></div>
+      <div className="shell tea-character-grid tea-character-grid--complete"><figure><img src="/assets/chajian/character-panel-grandmother.webp" alt="外婆毛毡人物正面侧面背面完整三视图" loading="lazy" /><figcaption><span>01 · 外婆 / GRANDMOTHER</span><small>情感引路人 · 传统生活的守护者</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-child.webp" alt="年少阿茶毛毡人物正面侧面背面完整三视图" loading="lazy" /><figcaption><span>02 · 年少阿茶 / YOUNG ACHA</span><small>故事起点 · 初识油茶与家族记忆</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-teen.webp" alt="青年阿茶第一套民族服饰完整三视图" loading="lazy" /><figcaption><span>03 · 青年阿茶 / ACHA</span><small>成长阶段 · 瑶族盛装造型</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-adult.webp" alt="成年阿茶民族服饰完整三视图" loading="lazy" /><figcaption><span>04 · 成年阿茶 / ADULT ACHA</span><small>理解传承 · 接过外婆的木槌</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-ahe.webp" alt="阿禾毛毡人物正面侧面背面完整三视图" loading="lazy" /><figcaption><span>05 · 阿禾 / A HE</span><small>下一代 · 传承故事的新起点</small></figcaption></figure><figure><img src="/assets/chajian/character-panel-festival.webp" alt="瑶族毛毡风格盛装人物完整三视图" loading="lazy" /><figcaption><span>06 · 瑶族盛装 / FESTIVAL LOOK</span><small>服饰细节 · 银饰与织绣纹样</small></figcaption></figure></div>
     </section>
 
     <section className="tea-page tea-poster-page" id="tea-posters">
       <div className="tea-page-count dark">07 / 08</div>
       <div className="shell tea-section-head dark"><p>KEY VISUAL POSTERS / 主题海报</p><h2>一片茶叶，<br />三重生命叙事。</h2></div>
       <div className="shell tea-poster-grid">
-        <figure><div className="tea-poster-mat"><img src="/assets/chajian/poster-01.png" alt="一片茶见一生主题叙事海报" loading="lazy" /></div><figcaption><span>01</span><strong>一生传承 / A LIFETIME OF HERITAGE</strong></figcaption></figure>
-        <figure><div className="tea-poster-mat"><img src="/assets/chajian/poster-02.png" alt="一片茶见一生祖孙油茶主题海报" loading="lazy" /></div><figcaption><span>02</span><strong>代代相传 / PASSED THROUGH GENERATIONS</strong></figcaption></figure>
-        <figure><div className="tea-poster-mat"><img src="/assets/chajian/poster-03.png" alt="一片茶见一生非遗文化长卷海报" loading="lazy" /></div><figcaption><span>03</span><strong>见人间烟火 / WITNESS A LIFETIME</strong></figcaption></figure>
+        <figure><div className="tea-poster-mat"><img src="/assets/chajian/poster-01.webp" alt="一片茶见一生主题叙事海报" loading="lazy" /></div><figcaption><span>01</span><strong>一生传承 / A LIFETIME OF HERITAGE</strong></figcaption></figure>
+        <figure><div className="tea-poster-mat"><img src="/assets/chajian/poster-02.webp" alt="一片茶见一生祖孙油茶主题海报" loading="lazy" /></div><figcaption><span>02</span><strong>代代相传 / PASSED THROUGH GENERATIONS</strong></figcaption></figure>
+        <figure><div className="tea-poster-mat"><img src="/assets/chajian/poster-03.webp" alt="一片茶见一生非遗文化长卷海报" loading="lazy" /></div><figcaption><span>03</span><strong>见人间烟火 / WITNESS A LIFETIME</strong></figcaption></figure>
       </div>
     </section>
 
     <section className="tea-page tea-storyboard-page">
       <div className="tea-page-count">08 / 08</div>
       <div className="shell tea-section-head"><p>SELECTED STORYBOARDS / 精选分镜</p><h2>从采茶到敬茶，<br />让情感自然生长。</h2></div>
-      <div className="shell tea-storyboard-grid">{storyboardCaptions.map((caption, index) => <figure key={caption}><img src={`/assets/chajian/storyboard-v2-${String(index + 1).padStart(2, '0')}.jpg`} alt={`${caption}动画分镜`} loading="lazy" /><figcaption><span>{String(index + 1).padStart(2, '0')}</span><strong>{caption}</strong></figcaption></figure>)}</div>
+      <div className="shell tea-storyboard-grid">{storyboardCaptions.map((caption, index) => <figure key={caption}><img src={`/assets/chajian/storyboard-v2-${String(index + 1).padStart(2, '0')}.webp`} alt={`${caption}动画分镜`} loading="lazy" /><figcaption><span>{String(index + 1).padStart(2, '0')}</span><strong>{caption}</strong></figcaption></figure>)}</div>
     </section>
     <ProjectFooter current={project} navigate={navigate} />
   </main>
@@ -519,7 +519,7 @@ function SmallRanchProject({ project, navigate }) {
     <Navigation detail navigate={navigate} scrolled />
 
     <section className="farm-page farm-cover">
-      <img className="farm-cover-art" src="/assets/farm/cover.png" alt="小小牧场像素游戏封面" />
+      <img className="farm-cover-art" src="/assets/farm/cover.webp" alt="小小牧场像素游戏封面" />
       <div className="farm-cover-mask" />
       <div className="farm-page-count">01 / 07</div>
       <div className="shell farm-cover-copy"><p>PIXEL FARM SIMULATION · UNITY 2D</p><h1>小小牧场<br /><span>SMALL RANCH</span></h1><div><strong>把一座会呼吸的小牧场放进桌面，在陪伴、养成与经营之间，留下一段轻松的像素时光。</strong><span>SCROLL TO EXPLORE ↓</span></div></div>
@@ -533,33 +533,33 @@ function SmallRanchProject({ project, navigate }) {
     <section className="farm-page farm-loop-page">
       <div className="farm-page-count dark">03 / 07</div>
       <div className="shell farm-section-head"><p>CORE GAME LOOP / 核心循环</p><h2>购买、成长、收获，<br />让牧场持续运转。</h2></div>
-      <figure className="shell farm-wide-art"><img src="/assets/farm/economy-loop.png" alt="小小牧场动物成长、产出与价格体系" loading="lazy" /><figcaption>动物成长阶段 · 资源产出 · 经营反馈</figcaption></figure>
+      <figure className="shell farm-wide-art"><img src="/assets/farm/economy-loop.webp" alt="小小牧场动物成长、产出与价格体系" loading="lazy" /><figcaption>动物成长阶段 · 资源产出 · 经营反馈</figcaption></figure>
     </section>
 
     <section className="farm-page farm-sprite-page">
       <div className="farm-page-count">04 / 07</div>
       <div className="shell farm-section-head light"><p>PIXEL ASSET SYSTEM / 像素资产系统</p><h2>用有限帧数，<br />塑造鲜活性格。</h2></div>
-      <figure className="shell farm-wide-art farm-wide-art--dark"><img src="/assets/farm/animal-sprites.png" alt="鸡、猪、鸭、兔与奶牛的待机和行走动画序列" loading="lazy" /><figcaption>待机动画 · 行走动画 · 多动物状态</figcaption></figure>
+      <figure className="shell farm-wide-art farm-wide-art--dark"><img src="/assets/farm/animal-sprites.webp" alt="鸡、猪、鸭、兔与奶牛的待机和行走动画序列" loading="lazy" /><figcaption>待机动画 · 行走动画 · 多动物状态</figcaption></figure>
     </section>
 
     <section className="farm-page farm-making-page">
       <div className="farm-page-count dark">05 / 07</div>
       <div className="shell farm-section-head"><p>ART & ANIMATION / 美术与动画制作</p><h2>从像素绘制，<br />到场景中的生命。</h2></div>
-      <div className="shell farm-process-grid"><ProcessCard src="/assets/farm/process-01.png" label="01 / 像素素材绘制" alt="Aseprite 中绘制奶牛像素动画" wide /><ProcessCard src="/assets/farm/process-02.png" label="02 / 场景搭建" alt="Unity 2D 牧场场景搭建" /><ProcessCard src="/assets/farm/process-03.png" label="03 / 动画状态" alt="Unity Animator 动画状态制作" /></div>
+      <div className="shell farm-process-grid"><ProcessCard src="/assets/farm/process-01.webp" label="01 / 像素素材绘制" alt="Aseprite 中绘制奶牛像素动画" wide /><ProcessCard src="/assets/farm/process-02.webp" label="02 / 场景搭建" alt="Unity 2D 牧场场景搭建" /><ProcessCard src="/assets/farm/process-03.webp" label="03 / 动画状态" alt="Unity Animator 动画状态制作" /></div>
     </section>
 
     <section className="farm-page farm-system-page">
       <div className="farm-page-count">06 / 07</div>
       <div className="shell farm-section-head light"><p>INTERACTION SYSTEM / 交互系统</p><h2>行为、商店与界面，<br />共同构成游戏节奏。</h2></div>
-      <div className="shell farm-process-grid farm-process-grid--three"><ProcessCard src="/assets/farm/process-04.png" label="01 / 动物行为逻辑" alt="动物行为脚本编写" /><ProcessCard src="/assets/farm/process-06.png" label="02 / 商店界面" alt="游戏商店界面设计" /><ProcessCard src="/assets/farm/process-07.png" label="03 / UI 功能编码" alt="游戏主界面功能编码" /></div>
+      <div className="shell farm-process-grid farm-process-grid--three"><ProcessCard src="/assets/farm/process-04.webp" label="01 / 动物行为逻辑" alt="动物行为脚本编写" /><ProcessCard src="/assets/farm/process-06.webp" label="02 / 商店界面" alt="游戏商店界面设计" /><ProcessCard src="/assets/farm/process-07.webp" label="03 / UI 功能编码" alt="游戏主界面功能编码" /></div>
     </section>
 
     <section className="farm-page farm-finale-page">
       <div className="farm-page-count dark">07 / 07</div>
       <div className="shell farm-section-head"><p>TESTING & FINAL EXPERIENCE / 测试与体验</p><h2>让牧场真正住进桌面。</h2></div>
       <div className="shell farm-test-gallery">
-        <figure><div className="farm-test-image"><img src="/assets/farm/process-05.png" alt="小小牧场 Unity 数据与构建测试画面" loading="lazy" /></div><figcaption><span>01 / BUILD TEST</span><strong>数据与构建测试</strong><small>Unity 构建完成 · 桌面程序运行验证</small></figcaption></figure>
-        <figure><div className="farm-test-image"><img src="/assets/farm/process-08.png" alt="小小牧场桌面常驻最终测试画面" loading="lazy" /></div><figcaption><span>02 / FINAL EXPERIENCE</span><strong>最终游戏画面</strong><small>桌面常驻体验 · 实际使用场景测试</small></figcaption></figure>
+        <figure><div className="farm-test-image"><img src="/assets/farm/process-05.webp" alt="小小牧场 Unity 数据与构建测试画面" loading="lazy" /></div><figcaption><span>01 / BUILD TEST</span><strong>数据与构建测试</strong><small>Unity 构建完成 · 桌面程序运行验证</small></figcaption></figure>
+        <figure><div className="farm-test-image"><img src="/assets/farm/process-08.webp" alt="小小牧场桌面常驻最终测试画面" loading="lazy" /></div><figcaption><span>02 / FINAL EXPERIENCE</span><strong>最终游戏画面</strong><small>桌面常驻体验 · 实际使用场景测试</small></figcaption></figure>
       </div>
     </section>
     <ProjectFooter current={project} navigate={navigate} />
